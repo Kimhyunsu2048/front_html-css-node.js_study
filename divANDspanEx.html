@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+
+        <!--
+            html에서는 디자인이나, 배치 등을 편하게, 보기좋게 하기 위해 많은 API를 사용하는데,
+            이중 대표적인 역할을 하는 두 요소가 div와 span입니다.
+            일단 이 두개를 이해하기 위해서는 block, inline의 개념을 알아야 합니다.
+
+            block: 어떤 요소(Element) 가 문서내에서 차지하는 공간을 나타내는데(size 와 헷갈리지마세요),
+            예를 들어 p tag 같은 경우 대표적 block 요소로, contents를 표시하고 다음 컨텐츠는 다음 라인에 출력되어집니다.
+
+            이렇게 특정 컨텐츠를 표현할때 다음 요소는 라인을 바꿔서 출력 시키는 개념을 block 요소라고 합니다.
+            대표적인 block 요소가 div(division 의 약자) 입니다.
+
+            div는 컨테이너(container) 역할을 하는데, 이말은 다른 요소를 이 컨테이너에 배치하고 다 배치가 되면 div를 페이지 특정
+            영역에 배치를 시키면 레이아웃등의 쉽게 정의 되어질 수 있게 되어집니다. 즉 다른 요소를 포함하는 컨테이너 역할을 하는
+            요소를 container라고 합니다.
+
+            span : 이 요소는 대표적 inner 요소로, 주로 text 를 표현할 때 사용됩니다. inline의 특징은 컨텐츠 만큼의 영역만 차지하고
+            다음에 추가 되는 컨텐츠는 바로 옆에 배치를 시키는 특성을 말합니다.
+
+        -->
+
+        안녕하세요. 
+        다음엔 css를 합니다. <br>
+        <p style="background-color: aqua;">그전에 입력 태그부터 하고 합니다.</p>
+        다음엔 css를 할게요.
+        <span style="background-color: green;">h</span><span>h</span><span>h</span><span>h</span><span>h</span>
+
+        <hr>
+
+        <!-- div 를 사용해서 그룹핑을 해볼게요 -->
+        <div style="border: 3px solid red;">
+            <h2>리액트란?</h2>
+            <p>자바스크립트의 확장 Library로 SPA 입니다.</p>
+            <span style="color: red;">Node.js</span> 의 한 부분입니다.
+            <div style="border: 3px dotted cyan;">
+                <p>div 내의 div의 내용입니다.</p>
+            </div>
+
+        </div>
+    </body>
+</html>
